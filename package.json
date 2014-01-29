@@ -1,0 +1,26 @@
+{
+  "name": "plugin-forkrate",
+  "version": "0.0.1",
+  "description": "Monitor the rate of forking on your server plugin for Graphdat",
+  "main": "index.js",
+  "dependencies": {
+    "graphdat-plugin-tools" : "0.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/graphdat/plugin-forkrate"
+  },
+  "keywords": [
+    "graphdat",
+    "plugin",
+    "fork",
+    "forkrate",
+    "forking"
+  ],
+  "author": "Graphdat <support@graphdat.com>",
+  "license": "Apache v2",
+  "bugs": {
+    "url": "https://github.com/graphdat/plugin-forkrate/issues"
+  },
+  "engine": "node >= 0.8.1"
+}

@@ -1,0 +1,22 @@
+{
+  "description" : "Displays the rate of forking on your server",
+  "icon" : "icon.png",
+  "command" : "node index.js",
+  "postExtract" : "npm install",
+  "ignore" : "node_modules",
+
+  "metrics" : [
+    "FORKRATE_PER_SECOND"
+  ],
+
+  "paramSchema" : [
+    {
+      "title": "Poll Seconds",
+      "name": "pollSeconds",
+      "description": "How often should the plugin poll /proc/stat",
+      "type" : "string",
+      "default" : 5,
+      "required" : true
+    }
+  ]
+}
