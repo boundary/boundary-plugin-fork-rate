@@ -7,6 +7,7 @@ Tracks the fork rate on your server by polling `/proc/stat`. On a busy productio
 
 ### Prerequisites
 - node version 0.8.0 or later
+- npm version 1.4.21 or later
 
 ### Plugin Setup
 1. Verify that you are able to get output by running the following:
