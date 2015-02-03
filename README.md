@@ -2,12 +2,19 @@ Boundary Forking Rate Plugin
 ----------------------------
 Tracks the fork rate on your server by polling `/proc/stat`. On a busy production box you can expect a rate of somewhere between 1-10/sec, if there is a rate approaching 100/sec then your server is experiencing issues.
 
-### Platforms
-- Linux
-
 ### Prerequisites
-- node version 0.8.0 or later
-- npm version 1.4.21 or later
+
+|     OS    | Linux | Windows | SmartOS | OS X |
+|:----------|:-----:|:-------:|:-------:|:----:|
+| Supported |   v   |    v    |    v    |  v   |
+
+
+|  Runtime | node.js | Python | Java |
+|:---------|:-------:|:------:|:----:|
+| Required |    +    |        |      |
+
+- [How to install node.js?](https://help.boundary.com/hc/articles/202360701)
+- Requires access to /proc/stat 
 
 ### Plugin Setup
 1. Verify that you are able to get output by running the following:
@@ -16,7 +23,7 @@ Tracks the fork rate on your server by polling `/proc/stat`. On a busy productio
      ```
 2. If there is no output, then this plugin will not work.
 
-### Plugin Configuration Fields
+#### Plugin Configuration Fields
 |Field Name  |Description                                |
 |:-----------|:------------------------------------------|
 |Poll Seconds|How often should the plugin poll /proc/stat|
