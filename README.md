@@ -6,13 +6,20 @@ Tracks the fork rate on your server by polling `/proc/stat`. On a busy productio
 
 |     OS    | Linux | Windows | SmartOS | OS X |
 |:----------|:-----:|:-------:|:-------:|:----:|
-| Supported |   v   |    v    |    v    |  v   |
+| Supported |   v   |         |         |      |
 
-
+Meter V4.0 or greater  (to get the new meter - curl -fsS -d '{"token":"api.500ca3ac3c-1791"}' -H 'Content-Type: application/json' https://meter.boundary.com/setup_meter > setup_meter.sh && chmod +x setup_meter.sh && ./setup_meter.sh)
 |  Runtime | node.js | Python | Java |
 |:---------|:-------:|:------:|:----:|
-| Required |    +    |        |      |
+| Required |         |        |      |
 
+Meter less than V4.0
+|  Runtime | node.js | Python | Java |
+|:---------|:-------:|:------:|:----:|
+| Required |    v    |        |      |
+
+
+- **OS**: Tested to work on **Debian-based Linux distributions** (although any Linux OS should work)
 - [How to install node.js?](https://help.boundary.com/hc/articles/202360701)
 - Requires access to /proc/stat 
 
