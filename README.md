@@ -8,7 +8,7 @@ Tracks the fork rate on your server by polling `/proc/stat`. On a busy productio
 |:----------|:-----:|:-------:|:-------:|:----:|
 | Supported |   v   |         |         |      |
 
-Meter V4.0 or greater  (to get the new meter - curl -fsS -d '{"token":"api.500ca3ac3c-1791"}' -H 'Content-Type: application/json' https://meter.boundary.com/setup_meter > setup_meter.sh && chmod +x setup_meter.sh && ./setup_meter.sh)
+Meter V4.0 or greater  (to get the new meter - curl -fsS -d '{"token":"<your API token here>"}' -H 'Content-Type: application/json' https://meter.boundary.com/setup_meter > setup_meter.sh && chmod +x setup_meter.sh && ./setup_meter.sh)
 |  Runtime | node.js | Python | Java |
 |:---------|:-------:|:------:|:----:|
 | Required |         |        |      |
