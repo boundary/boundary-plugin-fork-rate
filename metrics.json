@@ -1,0 +1,10 @@
+{
+  "FORKRATE_PER_SECOND": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "the rate at which processes are growing",
+    "displayName": "Fork Rate / sec",
+    "displayNameShort": "fork-rate",
+    "unit": "number"
+  }
+}
