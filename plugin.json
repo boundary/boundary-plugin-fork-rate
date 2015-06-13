@@ -18,11 +18,11 @@
 
   "paramSchema" : [
     {
-      "title": "Poll Seconds",
-      "name": "pollSeconds",
+      "title": "Poll Interval",
+      "name": "pollInterval",
       "description": "How often should the plugin poll /proc/stat",
-      "type" : "string",
-      "default" : 5,
+      "type" : "number",
+      "default" : 1000,
       "required" : true
     }
   ]
