@@ -14,33 +14,13 @@
 
 local framework = require('framework')
 local Plugin = framework.Plugin
-local DataSource = framework.DataSource
-local fs = require('fs')
+local FileReaderDataSource = framework.FileReaderDataSource
 local math = require('math')
-local timer = require('timer')
 local uv = require('uv')
 
 local PROC_STAT = '/proc/stat'
 
 local params = framework.params
-
-local FileReaderDataSource = DataSource:extend()
-function FileReaderDataSource:initialize(path)
-  self.path = path 
-end
-
-function FileReaderDataSource:fetch(context, func, params)
-  if not fs.existsSync(self.path) then
-    self:emit('error', 'The "' .. self.path .. '" was not found.')
-  else 
-    local success, result = pcall(fs.readFileSync, self.path)
-	  if not success then
-      self:emit('error', failure)
-    else
-      func(result)
-    end
-  end
-end
 
 local ds = FileReaderDataSource:new(PROC_STAT)
 local plugin = Plugin:new(params, ds)
