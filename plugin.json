@@ -22,7 +22,7 @@
       "name": "pollInterval",
       "description": "How often should the plugin poll /proc/stat",
       "type" : "number",
-      "default" : 1000,
+      "default" : 2000,
       "required" : true
     }
   ]

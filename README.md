@@ -1,5 +1,5 @@
-Boundary Forking Rate Plugin
-----------------------------
+# Boundary Forking Rate Plugin
+
 Tracks the fork rate on your server by polling `/proc/stat`. On a busy production box you can expect a rate of somewhere between 1-10/sec, if there is a rate approaching 100/sec then your server is experiencing issues.
 
 ### Prerequisites
@@ -8,27 +8,21 @@ Tracks the fork rate on your server by polling `/proc/stat`. On a busy productio
 |:----------|:-----:|:-------:|:-------:|:----:|
 | Supported |   v   |         |         |      |
 
-#### Boundary Meter Versions V4.0 Or Greater
-(to get the new meter - curl -fsS -d '{"token":"api.<Your API Token Here>"}' -H 'Content-Type: application/json' https://meter.boundary.com/setup_meter > setup_meter.sh && chmod +x setup_meter.sh && ./setup_meter.sh)
+#### Boundary Meter versions v4.2 or later
 
-|  Runtime | node.js | Python | Java |
-|:---------|:-------:|:------:|:----:|
-| Required |         |        |      |
+- To install new meter go to Settings->Installation or [see instructons](https://help.boundary.com/hc/en-us/sections/200634331-Installation).
+- To upgrade the meter to the latest version - [see instructons](https://help.boundary.com/hc/en-us/articles/201573102-Upgrading-the-Boundary-Meter). 
 
-#### Boundary Meter Versions Less Than V4.0
+#### Boundary Meter versions earlier than v4.2
 
 |  Runtime | node.js | Python | Java |
 |:---------|:-------:|:------:|:----:|
 | Required |    v    |        |      |
 
-
-- **OS**: Tested to work on **Debian-based Linux distributions** (although any Linux OS should work)
 - [How to install node.js?](https://help.boundary.com/hc/articles/202360701)
 - Requires access to /proc/stat 
 
 ### Plugin Setup
-
-#### All Versions
 
 1. Verify that you are able to get output by running the following:
      ```bash
@@ -46,11 +40,14 @@ Tracks the fork rate on your server by polling `/proc/stat`. On a busy productio
 
 ### Metrics Collected
 
-#### All Versions
-
 |Metric Name    |Description                            |
 |:--------------|:--------------------------------------|
 |Fork Rate / sec|the rate at which processes are growing|
 
+### Dashboards
+
+None
+
 ### References
+
 [Bitly - 10 Things We Forgot to Monitor](http://word.bitly.com/post/74839060954/ten-things-to-monitor)
