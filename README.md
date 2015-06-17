@@ -36,7 +36,7 @@ Tracks the fork rate on your server by polling `/proc/stat`. On a busy productio
 
 |Field Name  |Description                                |
 |:-----------|:------------------------------------------|
-|Poll Seconds|How often should the plugin poll /proc/stat|
+|Poll Interval|How often should poll /proc/stat (in milliseconds)|
 
 ### Metrics Collected
 

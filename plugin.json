@@ -18,10 +18,10 @@
 
   "paramSchema" : [
     {
-      "title": "Poll Interval",
+      "title": "Poll Interval (msec)",
       "name": "pollInterval",
-      "description": "How often should the plugin poll /proc/stat",
-      "type" : "number",
+      "description": "How often should the plugin poll /proc/stat (in milliseconds)",
+      "type" : "integer",
       "default" : 2000,
       "required" : true
     }
