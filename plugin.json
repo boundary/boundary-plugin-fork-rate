@@ -5,7 +5,7 @@
   "unsupportedPlatforms" : [
     {"osFamily":"Windows"},
     {"osFamily":"Darwin"}
-  ]
+  ],
   "tags": "fork-rate",
   "description" : "Displays the rate of forking on your server",
   "icon" : "icon.png",
