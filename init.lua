@@ -27,7 +27,7 @@ local plugin = Plugin:new(params, ds)
 
 local _last_count, _last_timestamp
 
-function delta(a, b)
+local function delta(a, b)
 	local na, nb = tonumber(a), tonumber(b)
 	return (na and nb and math.max(na - nb, 0)) or 0
 end
