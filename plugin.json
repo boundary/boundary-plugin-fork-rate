@@ -1,8 +1,11 @@
 {
   "name": "Boundary Fork Rate plugin",
-  "version" : "0.9.0",
+  "version" : "0.9.1",
   "meterVersionRequired" : "4.2.0-611",
-  "os" : [ "Linux" ],
+  "unsupportedPlatforms" : [
+    {"osFamily":"Windows"},
+    {"osFamily":"Darwin"}
+  ]
   "tags": "fork-rate",
   "description" : "Displays the rate of forking on your server",
   "icon" : "icon.png",
