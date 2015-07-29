@@ -37,7 +37,7 @@ function plugin:onParseValues(data)
   local result = {}
   local count = string.match(data, '%s*processes%s+(%d+)%s*')
   if not count then
-    self:event('critical', 'Can not parse process count')
+    self:emitEvent('critical', 'Can not parse process count')
   else 
     local count_delta = delta(count, _last_count)
     local timestamp = uv.Timer.now() / 1000.0
