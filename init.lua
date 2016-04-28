@@ -42,7 +42,7 @@ function plugin:onParseValues(data)
     local count_delta = delta(count, _last_count)
     local timestamp = uv.Timer.now() / 1000.0
     local timestamp_delta = delta(timestamp, _last_timestamp)
-    result['FORKRATE_PER_SECOND'] = ratio(timestamp_delta, count_delta) 
+    result['FORKRATE_PER_SECOND'] = ratio(count_delta, timestamp_delta) 
     _last_count = count
     _last_timestamp = timestamp
   end
